@@ -1,9 +1,9 @@
-######Calling function Skybevas and Data Collection
+######Calling function Skyvegas and Data Collection
 
 
 i=0
 
-while True: ###at 
+while True: ###Loop to recollect data####
        
     try:
         from Skyvegas import Skyvegas
