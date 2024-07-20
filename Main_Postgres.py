@@ -37,8 +37,8 @@ while True: ###Loop to recollect data####
    
         connection=psycopg2.connect(
             host="localhost",
-            user="postgres",  ###User
-            password="JaviPost",  ###Password
+            user="******",  ###User
+            password="*****",  ###Password
             database="Skyvegas",
             port="5432"    
         )
@@ -74,7 +74,7 @@ while True: ###Loop to recollect data####
         filtered_df_DL_3k=float(filtered_df_DL_3k)
     
 
-    ### Insterting data into Postgress
+    ### Inserting data into Postgres
     
         query_DL_3k="INSERT INTO dragon_luck_3k   VALUES('{}', '{}', '{}')".format(Day,Hour,filtered_df_DL_3k) 
 
@@ -95,7 +95,7 @@ while True: ###Loop to recollect data####
         filtered_df_DL_5k=float(filtered_df_DL_5k)
 
 
-    ### Insterting data into Postgress  
+    ### Inserting data into Postgres 
 
         query_DL_5k="INSERT INTO dragon_luck_5k   VALUES('{}', '{}', '{}')".format(Day,Hour,filtered_df_DL_5k) 
 
